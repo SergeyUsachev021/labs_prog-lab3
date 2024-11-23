@@ -444,7 +444,7 @@ public:
         return *this;
     }    
 
-    // Добавление элемента в конец
+    // Добавление элемента в конеdц
     void push_back(int value) {
         Node* newNode = new Node(value);
         if (head == nullptr) {
@@ -471,7 +471,7 @@ public:
     // Метод для вставки элемента по индексу
     void insert(int index, int value) {
         if (index < 0 || index > size) {
-            throw std::out_of_range("Индекс eвне дйопустимого диапазона");
+            throw std::out_of_range("Индекс вне допустимого диапазона");
         }
         if (index == 0) {
             push_front(value);
