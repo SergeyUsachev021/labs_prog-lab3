@@ -471,7 +471,7 @@ public:
     // Метод для вставки элемента по индексу
     void insert(int index, int value) {
         if (index < 0 || index > size) {
-            throw std::out_of_range("Индекс вне допустимого диапазона");
+            throw std::out_of_range("Индекс вне дйопустимого диапазона");
         }
         if (index == 0) {
             push_front(value);
